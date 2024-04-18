@@ -1,0 +1,53 @@
+input{
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #212121;
+    width: 400px;
+    display: flex;
+    
+    background-color: #ffffff;
+}
+button{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #212121;
+    background-color: #BDBDBD;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+h1{
+    margin-bottom: 100px;
+    color: #ff5722;
+    border-color: #212121;
+    /*poner la letra con bordes*/
+    -webkit-text-stroke: 2px black;
+    
+}
+form{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    /*fondo transparente*/
+    background-color: transparent;
+    
+    box-shadow: 0px 0px 10px 0px #000;
+    
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+} 
+button:hover{
+    background-color: #FFFFFF;
+}
