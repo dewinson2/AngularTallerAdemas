@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 })
 export class RecuperarComponent {
   Alert():void {
-    alert('Bienvenido');
+    alert('Se ha enviado un correo a su cuenta de correo electronico para recuperar su contraseña');
   }
   
 }

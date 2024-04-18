@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 })
 export class RegistrarComponent {
   Alert():void {
-    alert('Bienvenido');
+    alert('Se ha registrado correctamente');
   }
 
 }
