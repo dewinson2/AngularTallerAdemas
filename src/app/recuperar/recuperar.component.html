@@ -1,9 +1,9 @@
-<form>
+<form (ngSubmit)="onSubmit()">
     <h1>Recuperación</h1>
   <div>
     <label for="email">Email</label>
-    <input type="email" id="email"  required>
+    <input type="email" id="email"  name="username"  [(ngModel)]="username">
   </div>
 
-  <button type="submit" (click)="Alert">Recuperar contraseña</button>
+  <button type="submit">Recuperar contraseña</button>
 </form>

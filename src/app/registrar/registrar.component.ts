@@ -8,9 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './registrar.component.css'
 })
 export class RegistrarComponent {
-  Alert():void {
-    alert('Se ha registrado correctamente');
-  }
+ 
 
 }
 export default RegistrarComponent;
