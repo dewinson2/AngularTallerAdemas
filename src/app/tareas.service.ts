@@ -17,6 +17,15 @@ export class TareasService {
     console.log( this.tareas );
     tarea.id = this.tareas.length;
   }
+  eliminarTarea( id: number ) {
+    this.tareas = this.tareas.filter( tarea => tarea.id !== id );
+  }
+
+
+  
+
+
+  
 
 
 

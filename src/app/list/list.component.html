@@ -1,9 +1,10 @@
-@for (task of TareasService.tareas; track task.id) {
+@for (task of TareasService.tareas; track task.id     ) {
 
     <div> 
 
 
-        {{task.description}}
+        {{task.description}} 
+        <button (click)="TareasService.eliminarTarea(task.id)">Eliminar</button>
     </div>
 }@empty {
     <div> No hay tareas </div>}
