@@ -48,3 +48,10 @@ h2{
 button:hover{
     background-color: #FFFFFF;
 }
+
+@media (max-width: 500px){
+
+    input{
+        width: 200px;
+    }
+}

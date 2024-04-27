@@ -6,9 +6,4 @@ body {
   /*poner fondo degrade|*/
   background: linear-gradient(to right, #FFFFFF, #BDBDBD);
 }
-#app{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
+

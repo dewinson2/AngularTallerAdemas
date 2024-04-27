@@ -2,34 +2,34 @@
 
 
 
-<form>
+<form (ngSubmit)="onSubmit()">
     <h2>REGISTRARME</h2>
 <div>
     <label for="nombre">Nombre</label>
-    <input type="text" id="nombre" >
+    <input type="text" id="nombre" name="nombre">
 </div>
 
 <div>
 
 
     <label for="Apellido">Apellido</label>
-    <input type="text" id="apellido" >
+    <input type="text" id="apellido" name="apellido">
 </div>
 
 <div>
 
     <label for="email">Email</label>
-    <input type="email" id="email" >
+    <input type="email" id="email" name="email">
 </div>
 <div>
 
     <label for="contrasena">Contraseña</label>
-    <input type="password" id="contraseña" >
+    <input type="password" id="contraseña" name="contrasena">
 </div>
 <div>
 
     <label for="contrasena">Repetir Contraseña</label>
-    <input type="password" id="RepetirContraseña" >
+    <input type="password" id="RepetirContraseña" name="RepetirContraseña">
 </div>
-    <button type="submit" >REGISTRARME</button>
+    <button type="submit">REGISTRARME</button>
 </form>

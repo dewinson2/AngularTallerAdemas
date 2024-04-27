@@ -3,11 +3,14 @@ import { RouterOutlet } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { RegistrarComponent } from './registrar/registrar.component';
 import { RecuperarComponent } from './recuperar/recuperar.component';
+import { FormComponent } from './form/form.component';
+import { ListComponent } from './list/list.component';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, LoginComponent, RegistrarComponent, RecuperarComponent,],
+  imports: [RouterOutlet, LoginComponent, RegistrarComponent, RecuperarComponent,FormComponent,ListComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

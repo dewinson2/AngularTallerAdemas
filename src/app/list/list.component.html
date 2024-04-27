@@ -1,0 +1,9 @@
+@for (task of TareasService.tareas; track task.id) {
+
+    <div> 
+
+
+        {{task.description}}
+    </div>
+}@empty {
+    <div> No hay tareas </div>}
