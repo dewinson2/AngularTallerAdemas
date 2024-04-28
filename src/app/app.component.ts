@@ -5,12 +5,14 @@ import { RegistrarComponent } from './registrar/registrar.component';
 import { RecuperarComponent } from './recuperar/recuperar.component';
 import { FormComponent } from './form/form.component';
 import { ListComponent } from './list/list.component';
+import { NavbarComponent } from './navbar/navbar.component';
+
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, LoginComponent, RegistrarComponent, RecuperarComponent,FormComponent,ListComponent],
+  imports: [RouterOutlet, LoginComponent, RegistrarComponent, RecuperarComponent,FormComponent,ListComponent,NavbarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

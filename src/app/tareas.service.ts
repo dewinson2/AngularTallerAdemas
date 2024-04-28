@@ -9,6 +9,11 @@ export class TareasService {
   constructor() { }
   
   tareas: task[] = [
+    { id: 1, description: 'Tarea 1', state: false },
+    { id: 2, description: 'Tarea 2', state: true },
+    { id: 3, description: 'Tarea 3', state: false },
+    { id: 4, description: 'Tarea 4', state: true },
+    { id: 5, description: 'Tarea 5', state: false },
 
   ];
   agregarTarea( description: string ) {
@@ -20,6 +25,8 @@ export class TareasService {
   eliminarTarea( id: number ) {
     this.tareas = this.tareas.filter( tarea => tarea.id !== id );
   }
+  /*modificardescription*/
+  
 
 
   
