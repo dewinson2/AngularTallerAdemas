@@ -36,6 +36,14 @@ export class TareasService {
     });
   }
 
+  completarTarea( id: number ) {
+    this.tareas.map( tarea => {
+      if ( tarea.id === id ) {
+        tarea.state = !tarea.state;
+      }
+    });
+  }
+
 
   
 

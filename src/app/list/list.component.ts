@@ -20,7 +20,8 @@ export class ListComponent{
 
    Flod:string = 'Hola Mundo';
 
- }
+ 
+ 
 
  
 
@@ -49,5 +50,5 @@ export class ListComponent{
 
 
   
-
+}
 

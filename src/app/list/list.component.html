@@ -1,7 +1,8 @@
 @for (task of TareasService.tareas; track task.id     ) {
 
     
- <div id="description"> 
+ @if(task.state) {
+  <div id="description"> 
 
 
     <h2 [contentEditable]=(edit)   > {{task.description}}</h2>
@@ -10,13 +11,36 @@
     
     <button (click)="TareasService.eliminarTarea(task.id)">Eliminar</button>
     <button (click)="TareasService.editarTarea(task.id,Flod)">Editar</button>
-    <button>Completar</button>
+    <button (click)="TareasService.completarTarea(task.id)">Completar</button>
 
 
    </div>
     
 
  </div>  
+ } @else {
+
+  <div id="description"> 
+
+
+    <h2 [contentEditable]=(edit)   > {{task.description}}</h2>
+   <div>
+
+    
+    <button (click)="TareasService.eliminarTarea(task.id)">Eliminar</button>
+    <button (click)="TareasService.editarTarea(task.id,Flod)">Editar</button>
+    <button (click)="TareasService.completarTarea(task.id)">Completado</button>
+
+
+   </div>
+    
+
+ </div>  
+
+
+
+
+ }
 
 
 
