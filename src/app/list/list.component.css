@@ -15,7 +15,7 @@
         margin-top: 25px;
         margin-bottom: 25px;
         height: 200px;
-        width: 500px;
+        max-width: 500px;
         background-color: #BDBDBD;
         
         border-radius: 40px;

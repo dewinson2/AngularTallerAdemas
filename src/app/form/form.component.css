@@ -17,7 +17,7 @@ input{
     border-radius: 5px;
     border: 1px solid #212121;
     background-color: #bdbdbd;
-    width: 700px;
+    max-width: 700px;
     max-height: 400px;
     margin: 10px;
     cursor: pointer;

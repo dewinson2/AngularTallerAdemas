@@ -18,7 +18,7 @@ export class ListComponent{
     this.edit = !this.edit;
  }
 
- Flod:string = 'Hola Mundo';
+   Flod:string = 'Hola Mundo';
 
  }
 
