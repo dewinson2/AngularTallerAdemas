@@ -12,14 +12,17 @@ import { FormsModule } from '@angular/forms';
 })
 export class ListComponent{
   constructor(public TareasService:TareasService ) { }
-  edit = false;
+  content: string = '';
+  edit = true;
+ editar(){
+    this.edit = !this.edit;
+ }
 
- editar( id: number ) {
-    this.edit = true;
-    console.log( id );
-  }
+ Flod:string = 'Hola Mundo';
 
  }
+
+ 
 
 
 

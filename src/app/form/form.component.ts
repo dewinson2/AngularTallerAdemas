@@ -11,6 +11,17 @@ import { TareasService } from '../tareas.service';
 })
 export class FormComponent implements OnInit{
 constructor(public TareasService:TareasService ) { }
+
+flex = 'none';
+ None(): void {
+    if (this.flex === 'none') {
+      this.flex = 'flex';
+    } else {
+      this.flex = 'none';
+    }
+  }
+
+
 Description = '';
   agregarTarea() {
     this.TareasService.agregarTarea( this.Description );

@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { task } from './list/models/task';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -16,6 +17,7 @@ export class TareasService {
     { id: 5, description: 'Tarea 5', state: false },
 
   ];
+  
   agregarTarea( description: string ) {
     const tarea = new task( description );
     this.tareas.push( tarea );
@@ -25,8 +27,14 @@ export class TareasService {
   eliminarTarea( id: number ) {
     this.tareas = this.tareas.filter( tarea => tarea.id !== id );
   }
-  /*modificardescription*/
-  
+ 
+  editarTarea( id: number, description: string ) {
+    this.tareas.map( tarea => {
+      if ( tarea.id === id ) {
+        tarea.description = description;
+      }
+    });
+  }
 
 
   

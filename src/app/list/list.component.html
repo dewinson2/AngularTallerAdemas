@@ -4,12 +4,12 @@
  <div id="description"> 
 
 
-    <h2 [contentEditable]=  (edit)  > {{task.description}}</h2>
+    <h2 [contentEditable]=(edit)   > {{task.description}}</h2>
    <div>
 
     
     <button (click)="TareasService.eliminarTarea(task.id)">Eliminar</button>
-    <button >Editar</button>
+    <button (click)="TareasService.editarTarea(task.id,Flod)">Editar</button>
     <button>Completar</button>
 
 
