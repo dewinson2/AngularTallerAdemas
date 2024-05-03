@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter, viewChild, NgModule } from '@angular/core';
 import { FormComponent } from '../form/form.component';
 
 @Component({
@@ -9,9 +9,17 @@ import { FormComponent } from '../form/form.component';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
-  @Output() None = new EventEmitter<void>();
-
-  onClick() {
-    this.None.emit();
+ flex = "none";
+ 
+  changeFlex(){
+    if(this.flex === "flex"){
+      this.flex = "none";} else {
+    this.flex = "flex";}
   }
+  
+
+  
 }
+
+
+

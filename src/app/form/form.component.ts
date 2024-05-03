@@ -1,4 +1,4 @@
-import { Component,OnInit } from '@angular/core';
+import { Component,OnInit, Output, output,EventEmitter } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { TareasService } from '../tareas.service';
 
@@ -12,31 +12,36 @@ import { TareasService } from '../tareas.service';
 export class FormComponent implements OnInit{
 constructor(public TareasService:TareasService ) { }
 
-flex = 'none';
- None(): void {
-    if (this.flex === 'none') {
-      this.flex = 'flex';
-    } else {
-      this.flex = 'none';
-    }
-  }
-
-
-Description = '';
-  agregarTarea() {
-    this.TareasService.agregarTarea( this.Description );
-    this.Description = '';
-  }
-
-
-
-
-
 
 
 
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }
+
+
+
+ check = false;
+
+Description = '';
+  agregarTarea() {
+    this.TareasService.agregarTarea( this.Description,"Hola" );
+    this.Description = '';
+  }
+
+   changecheck(){
+    this.check = !this.check;
+  }
+  ;
+  }
+
+
+
+
+
+
+
+
   
-}
+  
+

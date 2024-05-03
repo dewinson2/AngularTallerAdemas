@@ -10,19 +10,36 @@ export class TareasService {
   constructor() { }
   
   tareas: task[] = [
-    { id: 1, description: 'Tarea 1', state: false },
-    { id: 2, description: 'Tarea 2', state: true },
-    { id: 3, description: 'Tarea 3', state: false },
-    { id: 4, description: 'Tarea 4', state: true },
-    { id: 5, description: 'Tarea 5', state: false },
+    {
+      id: 1,
+      description: 'Tarea 1',
+      state: true,
+      name: 'Hola'
+    },
+    {
+      id: 2,
+      description: 'Tarea 2',
+      state: false,
+      name: 'Hola'
+    },
+    {
+      id: 3,
+      description: 'Tarea 3',
+      state: true,
+      name: 'Hola'
+    }
+    
 
   ];
   
-  agregarTarea( description: string ) {
-    const tarea = new task( description );
+  agregarTarea( description: string, name: string) {
+    const tarea = new task( description,name);
     this.tareas.push( tarea );
     console.log( this.tareas );
     tarea.id = this.tareas.length;
+    tarea.state = false;
+
+   
   }
   eliminarTarea( id: number ) {
     this.tareas = this.tareas.filter( tarea => tarea.id !== id );
@@ -42,6 +59,13 @@ export class TareasService {
         tarea.state = !tarea.state;
       }
     });
+
+
+
+
+
+
+    
   }
 
 

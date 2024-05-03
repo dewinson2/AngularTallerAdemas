@@ -1,49 +1,37 @@
 @for (task of TareasService.tareas; track task.id     ) {
 
     
- @if(task.state) {
-  <div id="description"> 
+ 
 
-
-    <h2 [contentEditable]=(edit)   > {{task.description}}</h2>
-   <div>
-
-    
-    <button (click)="TareasService.eliminarTarea(task.id)">Eliminar</button>
-    <button (click)="TareasService.editarTarea(task.id,Flod)">Editar</button>
-    <button (click)="TareasService.completarTarea(task.id)">Completar</button>
-
-
-   </div>
-    
-
- </div>  
- } @else {
-
-  <div id="description"> 
-
-
-    <h2 [contentEditable]=(edit)   > {{task.description}}</h2>
-   <div>
-
-    
-    <button (click)="TareasService.eliminarTarea(task.id)">Eliminar</button>
-    <button (click)="TareasService.editarTarea(task.id,Flod)">Editar</button>
-    <button (click)="TareasService.completarTarea(task.id)">Completado</button>
-
-
-   </div>
-    
-
- </div>  
+<div id="taske">
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <p>{{task.description}}</p>
+      </div>
+      <div class="card-back">
+        <p>{{task.name}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+  
 
 
 
 
- }
 
 
 
-    
-}@empty {
+
+
+
+
+
+
+
+
+
+  
+ } @empty {
     <div> No hay tareas </div>}
