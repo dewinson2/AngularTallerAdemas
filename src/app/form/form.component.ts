@@ -1,4 +1,4 @@
-import { Component,OnInit, Output, output,EventEmitter } from '@angular/core';
+import { Component,OnInit, Output, output,EventEmitter, Input } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { TareasService } from '../tareas.service';
 
@@ -11,17 +11,24 @@ import { TareasService } from '../tareas.service';
 })
 export class FormComponent implements OnInit{
 constructor(public TareasService:TareasService ) { }
+  ejecutarMetodo(){
+    this.TareasService.ejecutarMetodo();
+  }
+
+
+   name = '';
+   description = '';
 
 
 
 
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
+  ngOnInit() {
+    
   }
 
 
 
- check = false;
+ 
 
 Description = '';
   agregarTarea() {
@@ -29,10 +36,8 @@ Description = '';
     this.Description = '';
   }
 
-   changecheck(){
-    this.check = !this.check;
-  }
-  ;
+   
+  
   }
 
 

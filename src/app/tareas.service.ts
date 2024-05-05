@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { task } from './list/models/task';
+import { Subject } from 'rxjs';
 
 
 @Injectable({
@@ -8,7 +9,42 @@ import { task } from './list/models/task';
 export class TareasService {
 
   constructor() { }
-  
+
+   private metodoSubjet = new Subject<void>();
+    metodoObservable$ = this.metodoSubjet.asObservable();
+    ejecutarMetodo() {
+      this.metodoSubjet.next();
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   tareas: task[] = [
     {
       id: 1,
@@ -73,6 +109,8 @@ export class TareasService {
 
 
   
+
+
 
 
 

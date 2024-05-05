@@ -11,10 +11,14 @@
       </div>
       <div class="card-back">
         <p>{{task.name}}</p>
+        
       </div>
     </div>
+    <button (click)="TareasService.eliminarTarea(task.id)">X</button>
   </div>
+  
 </div>
+
   
 
 
