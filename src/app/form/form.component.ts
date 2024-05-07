@@ -11,7 +11,7 @@ import { TareasService } from '../tareas.service';
 })
 export class FormComponent implements OnInit{
 constructor(public TareasService:TareasService ) { }
-  ejecutarMetodo(){
+  displayf(){
     this.TareasService.ejecutarMetodo();
   }
 
