@@ -63,5 +63,24 @@ svg{
  
    #ordenar{
       display: inline-block;
-     
+      
+   }
+
+   #completo{
+    background-color:#BDBDBD;
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: #009d2f 2px solid;
+
+   }
+   #completos{
+    background-color: #009d2f;
+    color: white;
+   
    }

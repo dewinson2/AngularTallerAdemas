@@ -46,24 +46,7 @@ export class TareasService {
 
 
   tareas: task[] = [
-    {
-      id: 1,
-      description: 'Tarea 1',
-      state: true,
-      name: 'Hola'
-    },
-    {
-      id: 2,
-      description: 'Tarea 2',
-      state: false,
-      name: 'Hola'
-    },
-    {
-      id: 3,
-      description: 'Tarea 3',
-      state: true,
-      name: 'Hola'
-    }
+   
     
 
   ];

@@ -4,50 +4,81 @@
 
 
 @for (task of TareasService.tareas; track task.id     ) {
-
-  <main id="ordenar">
+  @if(task.state==false){
+    <main id="ordenar">
  
-  <div>
-    <div id="HEAD"><h2>{{task.name}}</h2>  </div>
+      <div>
+        <div id="HEAD"><h2>{{task.name}}</h2>  </div>
+        
+        <p>{{task.description}}</p>
+        <footer>
+            <img src="./assets/boton-x.svg" alt=""  id="boton-x" (click)="TareasService.eliminarTarea(task.id)">
+            <img src="./assets/cheque.svg" alt="" id="cheque" (click)="TareasService.completarTarea(task.id)">
+        
+        
+        
+        
+        
+        </footer>
     
-    <p>{{task.description}}</p>
-    <footer>
-        <img src="./assets/boton-x.svg" alt=""  id="boton-x" (click)="TareasService.eliminarTarea(task.id)">
-        <img src="./assets/cheque.svg" alt="" id="cheque" (click)="TareasService.completarTarea(task.id)">
     
     
     
     
     
-    </footer>
+    
+    
+    </div>
 
-
-
-
-
-
-
-
-</div>
-
-
+    </main>
+  }@else{
+    <main id="ordenar">
+      <div id="completo">
+ 
+      <div id="HEAD">{{task.name}}  <p id="completos">Completada!</p></div>
+      
+      <p>{{task.description}} </p>
+      
+      <footer>
+          <img src="./assets/boton-x.svg" alt=""  id="boton-x" (click)="TareasService.eliminarTarea(task.id)">
+          <img src="./assets/cheque.svg" alt="" id="cheque" (click)="TareasService.completarTarea(task.id)">
+      
+      
+      
+      
+      
+      </footer>
+  
+  
+  
+  
+  
+  
+  
+  
+         </div>
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </main>}
   
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</main>
+  
   
  } @empty {
     <h3>No hay tareas</h3> }
