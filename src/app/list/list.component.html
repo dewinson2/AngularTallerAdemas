@@ -1,24 +1,36 @@
+
+
+
+
+
 @for (task of TareasService.tareas; track task.id     ) {
 
-    
+  <main id="ordenar">
  
+  <div>
+    <div id="HEAD"><h2>{{task.name}}</h2>  </div>
+    
+    <p>{{task.description}}</p>
+    <footer>
+        <img src="./assets/boton-x.svg" alt=""  id="boton-x" (click)="TareasService.eliminarTarea(task.id)">
+        <img src="./assets/cheque.svg" alt="" id="cheque" (click)="TareasService.completarTarea(task.id)">
+    
+    
+    
+    
+    
+    </footer>
 
-<div id="taske">
-  <div class="card">
-    <div class="card-inner">
-      <div class="card-front">
-        <p>{{task.description}}</p>
-      </div>
-      <div class="card-back">
-        <p>{{task.name}}</p>
-        
-      </div>
-    </div>
-    <button (click)="TareasService.eliminarTarea(task.id)">X</button>
-  </div>
-  
+
+
+
+
+
+
+
 </div>
 
+
   
 
 
@@ -35,7 +47,9 @@
 
 
 
-
+</main>
   
  } @empty {
-    <div> No hay tareas </div>}
+    <h3>No hay tareas</h3> }
+
+ 
